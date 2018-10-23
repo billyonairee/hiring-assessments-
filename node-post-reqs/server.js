@@ -9,7 +9,7 @@ http.createServer(function (request, response) {
   if (request.method === 'POST') {
     /*========YOUR CODE HERE=========*/
     if(path === '/hifive'){
-      fs.readFile("/Users/leeyongseok/Documents/CODESTATES/IMMERSIVE COURSE/im08-2018-09-hiring-assessments/node-post-reqs/assets/hifive.jpg", 
+      fs.readFile("./assets/hifive.jpg", 
         function(err, data){
           if(err){
             throw err;
@@ -20,7 +20,7 @@ http.createServer(function (request, response) {
     }
 //
     if(path === '/lowfive'){
-      fs.readFile("/Users/leeyongseok/Documents/CODESTATES/IMMERSIVE COURSE/im08-2018-09-hiring-assessments/node-post-reqs/assets/lowfive.jpg", 
+      fs.readFile("./assets/lowfive.jpg", 
         function(err, data){
           if(err){
             throw err;
