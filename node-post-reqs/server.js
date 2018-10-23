@@ -18,7 +18,7 @@ http.createServer(function (request, response) {
           }
         })
     }
-
+//
     if(path === '/lowfive'){
       fs.readFile("/Users/leeyongseok/Documents/CODESTATES/IMMERSIVE COURSE/im08-2018-09-hiring-assessments/node-post-reqs/assets/lowfive.jpg", 
         function(err, data){
