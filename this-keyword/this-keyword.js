@@ -11,6 +11,11 @@ var sport = {
   ],
   playerNames: function () {
     // YOUR CODE HERE
+    var res = []
+    for(var i = 0; i < this["players"].length; i++){
+      res.push(`${this["players"][i]["name"]} plays ${this["name"]}`);
+    }
+    return res
   }
 };
 

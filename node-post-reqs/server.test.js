@@ -8,7 +8,6 @@ describe('', function() {
       'method': 'POST',
       'uri': 'http://127.0.0.1:4568/hifive'
     };
-
     request(options, function(error, res, body) {
       expect(res.statusCode).to.equal(200);
       expect(res.headers['content-length']).to.equal('7154');

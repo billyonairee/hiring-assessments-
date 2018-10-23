@@ -3,3 +3,4 @@
 
 
 
+INSERT INTO user(name,age,location) VALUES (yong,22,Incheon)

@@ -3,3 +3,29 @@
   Don't forget newlines at the end of all files :)
 -->
 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+</head>
+<style>
+  #main{
+    margin: 40%
+  }
+</style>
+
+<body>
+  <div id='main'>
+    <input id='id' type='text' value='' />
+    <button onClick='submit()'>submit</button>
+  </div>
+  <script>
+    var submit = function () {
+      var inputVal = document.getElementById('id')
+      console.log(inputVal.value)
+    } 
+  </script>
+</body>
+
+</html>

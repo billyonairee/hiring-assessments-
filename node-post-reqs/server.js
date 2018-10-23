@@ -1,13 +1,35 @@
 //Fill in vars here
-var = /* Missing require statment */,
- = /* Missing require statment */,
- = /* Missing require statment */
+var http = require('http') /* Missing require statment */,
+    fs = require('fs')/* Missing require statment */,
+    url = require('url')/* Missing require statment */
 
 http.createServer(function (request, response) {
   var path = url.parse(request.url, true).pathname;
-
+  
   if (request.method === 'POST') {
     /*========YOUR CODE HERE=========*/
+    if(path === '/hifive'){
+      fs.readFile("/Users/leeyongseok/Documents/CODESTATES/IMMERSIVE COURSE/im08-2018-09-hiring-assessments/node-post-reqs/assets/hifive.jpg", 
+        function(err, data){
+          if(err){
+            throw err;
+          }else{         
+            response.end(data)
+          }
+        })
+    }
+
+    if(path === '/lowfive'){
+      fs.readFile("/Users/leeyongseok/Documents/CODESTATES/IMMERSIVE COURSE/im08-2018-09-hiring-assessments/node-post-reqs/assets/lowfive.jpg", 
+        function(err, data){
+          if(err){
+            throw err;
+          }else{
+            response.end(data)
+          }
+        })
+    }
+
   } else if (request.method === 'GET') {
     if(path === '/'){
       response.writeHead(200,{'Content-Type':'text/html'});
