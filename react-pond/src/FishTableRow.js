@@ -20,7 +20,7 @@ class FishTableRow extends Component {
     return (
       // <tr onClick='picture()'>
       <tr onClick={()=>this.setState({showDescription: !this.state.showDescription})}>
-        <td class="fish-name">{this.props.fish.name}</td>
+        <td className="fish-name">{this.props.fish.name}</td>
         <td><img src={this.props.fish.image} /></td>
         {this.state.showDescription ? <td id='fish_description'>{this.props.fish.description}</td> : null}
       </tr>
